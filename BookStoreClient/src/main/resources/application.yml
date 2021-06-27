@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    password: 123456
+    url: jdbc:mysql://localhost:3306/bookstore
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: none
+  security:
+    oauth2:
+      client:
+        registration:
+          facebook:
+            client-id: 2842490549394366
+            client-secret: db9fc48bc335d7a8242aade42cea2789
+          google:
+            client-id: 226024810515-ngg6feugcbdsm2rufcr6g77tuncfn6ur.apps.googleusercontent.com
+            client-secret: BfyiX-GeOGdFLOIXTYZBax9m
+            scope:
+            - email
+            - profile      
