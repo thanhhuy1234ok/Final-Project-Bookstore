@@ -49,7 +49,7 @@ public class Customer {
 	private Date createDate;
 	
 	@Column(name = "last_login")
-	private String lastLogin;
+	private Date lastLogin;
 	
 	@Column(name = "email_verified")
 	private Boolean emailVerified;
@@ -63,6 +63,8 @@ public class Customer {
 	
 	@Column(name = "enabled")
 	private Boolean enabled;
+
+
 
 	public Integer getId() {
 		return id;
@@ -144,11 +146,12 @@ public class Customer {
 		this.createDate = createDate;
 	}
 
-	public String getLastLogin() {
+	public Date getLastLogin() {
 		return lastLogin;
 	}
 
-	public void setLastLogin(String lastLogin) {
+	public void setLastLogin(Date lastLogin) {
+
 		this.lastLogin = lastLogin;
 	}
 
